@@ -1,0 +1,123 @@
+/* Tło i podstawowy wygląd */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Kontener */
+.container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Nagłówek */
+h1 {
+  text-align: center;
+  color: #00796b;
+}
+
+/* Formularz */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+}
+
+form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Filtrowanie */
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #b2dfdb;
+  color: #004d40;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#filters button:hover {
+  background-color: #4db6ac;
+  color: white;
+}
+
+/* Lista zadań */
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#taskList li {
+  background: #f1f8e9;
+  border-left: 6px solid #aed581;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+ul#taskList li.completed {
+  background: #c8e6c9;
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* Przyciski zadania */
+ul#taskList button {
+  margin-left: 0.4rem;
+  border: none;
+  background: #81c784;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+ul#taskList button:hover {
+  background: #558b2f;
+}
